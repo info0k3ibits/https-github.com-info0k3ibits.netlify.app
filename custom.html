@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crea il tuo Beat - 0k3i Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="img/logo.png" alt="Logo Beat Store">
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="beats.html">Negozio</a>
+        <a href="custom.html">Crea il tuo Beat</a>
+        <a href="contatti.html">Contatti</a>
+    </nav>
+
+    <main>
+        <h2>Crea il tuo Beat Personalizzato</h2>
+        <p>Compila il modulo qui sotto con i dettagli del tuo progetto. Più informazioni mi dai, più il suono sarà fedele alla tua visione.</p>
+
+        <div class="custom-form-container">
+            <form action="https://formsubmit.co/info.0k3i.bits@gmail.com" method="POST" class="form-grid">
+                <input type="hidden" name="_subject" value="Nuova richiesta di Beat personalizzato">
+                <input type="hidden" name="_captcha" value="false">
+                
+                <div class="form-group">
+                    <label for="chiave">Chiave Musicale</label>
+                    <select id="chiave" name="chiave" required>
+                        <option value="" disabled selected>Seleziona la chiave...</option>
+                        <optgroup label="Maggiore">
+                            <option value="C Maj">C Major (Do Magg)</option>
+                            <option value="C# Maj">C# Major (Do# Magg)</option>
+                            <option value="D Maj">D Major (Re Magg)</option>
+                            <option value="D# Maj">D# Major (Re# Magg)</option>
+                            <option value="E Maj">E Major (Mi Magg)</option>
+                            <option value="F Maj">F Major (Fa Magg)</option>
+                            <option value="F# Maj">F# Major (Fa# Magg)</option>
+                            <option value="G Maj">G Major (Sol Magg)</option>
+                            <option value="G# Maj">G# Major (Sol# Magg)</option>
+                            <option value="A Maj">A Major (La Magg)</option>
+                            <option value="A# Maj">A# Major (La# Magg)</option>
+                            <option value="B Maj">B Major (Si Magg)</option>
+                        </optgroup>
+                        <optgroup label="Minore">
+                            <option value="C Min">C Minor (Do Min)</option>
+                            <option value="C# Min">C# Minor (Do# Min)</option>
+                            <option value="D Min">D Minor (Re Min)</option>
+                            <option value="D# Min">D# Minor (Re# Min)</option>
+                            <option value="E Min">E Minor (Mi Min)</option>
+                            <option value="F Min">F Minor (Fa Min)</option>
+                            <option value="F# Min">F# Minor (Fa# Min)</option>
+                            <option value="G Min">G Minor (Sol Min)</option>
+                            <option value="G# Min">G# Minor (Sol# Min)</option>
+                            <option value="A Min">A Minor (La Min)</option>
+                            <option value="A# Min">A# Minor (La# Min)</option>
+                            <option value="B Min">B Minor (Si Min)</option>
+                        </optgroup>
+                        <option value="Non so">Non lo so / Fai tu</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="bpm">BPM (Velocità)</label>
+                    <select id="bpm" name="bpm" required>
+                        <option value="" disabled selected>Seleziona i BPM...</option>
+                        <option value="50">50 BPM</option>
+                        <option value="60">60 BPM</option>
+                        <option value="70">70 BPM</option>
+                        <option value="80">80 BPM</option>
+                        <option value="90">90 BPM</option>
+                        <option value="100">100 BPM</option>
+                        <option value="110">110 BPM</option>
+                        <option value="120">120 BPM</option>
+                        <option value="130">130 BPM</option>
+                        <option value="140">140 BPM</option>
+                        <option value="150">150 BPM</option>
+                        <option value="160">160 BPM</option>
+                        <option value="170">170 BPM</option>
+                        <option value="180">180 BPM</option>
+                        <option value="190">190 BPM</option>
+                        <option value="200">200 BPM</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="genere">Genere</label>
+                    <select id="genere" name="genere" required>
+                        <option value="" disabled selected>Scegli il genere principale...</option>
+                        <option value="Trap">Trap</option>
+                        <option value="Drill">Drill</option>
+                        <option value="Boom Bap">Boom Bap</option>
+                        <option value="Lo-Fi">Lo-Fi Hip Hop</option>
+                        <option value="R&B">R&B / Soul</option>
+                        <option value="Pop">Pop</option>
+                        <option value="Synthwave">Synthwave</option>
+                        <option value="Altro">Altro (specifica nel messaggio)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="consegna">Consegna Ideale</label>
+                    <select id="consegna" name="consegna" required>
+                        <option value="" disabled selected>Tempistiche desiderate...</option>
+                        <option value="Pochi giorni">Pochi giorni (Urgente)</option>
+                        <option value="Una settimana">Una settimana</option>
+                        <option value="Due settimane">Due settimane</option>
+                        <option value="Un mese">Un mese</option>
+                        <option value="Senza scadenza">Senza scadenza (Fai con calma)</option>
+                    </select>
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="reference">Tracce di Reference</label>
+                    <input type="text" id="reference" name="reference" placeholder="Es: Travis Scott - Sicko Mode, oppure inserisci un link YouTube">
+                </div>
+
+                <div class="form-group full-width">
+                    <label>Mood del Beat (Seleziona il vibe)</label>
+                    <div class="mood-selector">
+                        <label class="mood-option">
+                            <input type="radio" name="mood" value="Aggressivo">
+                            <span class="color-circle" style="background-color: #ff3b30;" title="Rosso: Aggressivo / Dark"></span>
+                            <span class="mood-label">Aggressivo</span>
+                        </label>
+                        <label class="mood-option">
+                            <input type="radio" name="mood" value="Malinconico">
+                            <span class="color-circle" style="background-color: #007aff;" title="Blu: Malinconico / Triste"></span>
+                            <span class="mood-label">Malinconico</span>
+                        </label>
+                        <label class="mood-option">
+                            <input type="radio" name="mood" value="Felice">
+                            <span class="color-circle" style="background-color: #ffcc00;" title="Giallo: Felice / Solare"></span>
+                            <span class="mood-label">Solare</span>
+                        </label>
+                        <label class="mood-option">
+                            <input type="radio" name="mood" value="Misterioso">
+                            <span class="color-circle" style="background-color: #af52de;" title="Viola: Misterioso / Spaziale"></span>
+                            <span class="mood-label">Misterioso</span>
+                        </label>
+                        <label class="mood-option">
+                            <input type="radio" name="mood" value="Chill">
+                            <span class="color-circle" style="background-color: #34c759;" title="Verde: Chill / Rilassato"></span>
+                            <span class="mood-label">Chill</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="messaggio">Descrizione e Messaggio del Brano</label>
+                    <textarea id="messaggio" name="messaggio" rows="6" placeholder="Parlami del concept del brano, cosa vuoi trasmettere, strumenti particolari che vorresti sentire..."></textarea>
+                </div>
+
+                <div class="form-group full-width">
+                    <button type="submit" class="btn-invia">Richiedi il tuo Beat</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>Progetto d'esame - Fondamenti di Informatica e Programmazione II</p>
+        <p>0k3i ®</p>
+    </footer>
+</body>
+</html>
+</main>
